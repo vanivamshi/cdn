@@ -1,0 +1,23 @@
+{
+  "domain": "cdn.local",
+
+  "origin": { "ip": "127.0.0.100", "port": 8080, "latency_ms": 200 },
+
+  "dns": { "ip": "127.0.0.2", "port": 1053, "ttl": 5, "health_interval": 2 },
+
+  "edges": [
+    { "name": "us-east",      "ip": "127.0.0.11", "port": 8080, "lat": 40.71, "lon": -74.00, "cache_kb": 64 },
+    { "name": "eu-west",      "ip": "127.0.0.12", "port": 8080, "lat": 51.50, "lon":  -0.12, "cache_kb": 64 },
+    { "name": "ap-south",     "ip": "127.0.0.13", "port": 8080, "lat": 19.07, "lon":  72.87, "cache_kb": 64 },
+    { "name": "ap-northeast", "ip": "127.0.0.14", "port": 8080, "lat": 35.68, "lon": 139.69, "cache_kb": 64 }
+  ],
+
+  "geoip": [
+    { "cidr": "127.1.1.0/24", "city": "Boston",    "lat": 42.36, "lon": -71.06 },
+    { "cidr": "127.1.2.0/24", "city": "Paris",     "lat": 48.85, "lon":   2.35 },
+    { "cidr": "127.1.3.0/24", "city": "Bangalore", "lat": 12.97, "lon":  77.59 },
+    { "cidr": "127.1.4.0/24", "city": "Seoul",     "lat": 37.57, "lon": 126.98 }
+  ],
+
+  "default_location": { "city": "Unknown", "lat": 40.71, "lon": -74.00 }
+}
